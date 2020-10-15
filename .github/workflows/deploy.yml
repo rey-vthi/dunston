@@ -12,6 +12,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: merging frontend and backend
+        env:
+          USER_NAME: rey-vthi
+          BACKEND: dunston
+          FRONTEND: dunston_ui
         run: ./deploy.sh
 
       - name: Deploy
