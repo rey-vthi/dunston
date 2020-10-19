@@ -23,4 +23,4 @@ jobs:
           git remote add heroku https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/${{secrets.HEROKU_APP_NAME}}.git
           git add .
           git commit -m "deploying"
-          git push heroku master --set-upstream -f;
+          git push heroku main --set-upstream -f;
