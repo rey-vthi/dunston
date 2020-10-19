@@ -20,6 +20,8 @@ jobs:
 
       - name: Deploy
         run: |
+          git config --global user.name "rey-vthi"
+          git config --global user.email "108cs16047@gmail.com"
           git remote add heroku https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/${{secrets.HEROKU_APP_NAME}}.git
           git add .
           git commit -m "deploying"
